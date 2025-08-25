@@ -129,3 +129,4 @@ cp pom.xml ../
 cd //
 ls -lhtr
 exit
+ls -lhtr
