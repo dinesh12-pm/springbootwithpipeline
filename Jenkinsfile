@@ -1,38 +1,19 @@
 pipeline {
     agent any
 
-    tools {
-        jdk 'JDK17'        // Global Tool Configuration
-        maven 'Maven3'     // Global Tool Configuration
-    }
-
     environment {
         DEPLOY_USER = 'ubuntu'
-        DEPLOY_HOST = '184.73.37.196'       // Change to your EC2 IP
-        DEPLOY_DIR  = '/home/ubuntu/app'
-        APP_NAME    = 'springboot-ec2-jenkins-demo-1.0.0.jar'
+        DEPLOY_HOST = '184.73.37.196'  // your EC2 IP
+        DEPLOY_DIR = '/home/ubuntu/app'
+        APP_NAME = 'springboot-ec2-jenkins-demo-1.0.0.jar'
+        PORT = '8080'
     }
 
     stages {
-        stage('Checkout') {
-            steps {
-                checkout scm
-            }
-        }
-
         stage('Build') {
             steps {
-                script {
-                    sh 'mvn -B clean package -DskipTests'
-
-                    // Check if JAR exists
-                    def jarExists = fileExists("target/${APP_NAME}")
-                    if (!jarExists) {
-                        error "Build failed: ${APP_NAME} not found!"
-                    }
-
-                    archiveArtifacts artifacts: "target/${APP_NAME}", fingerprint: true
-                }
+                echo 'Building the Spring Boot application...'
+                sh 'mvn clean package -DskipTests'
             }
         }
 
@@ -41,11 +22,23 @@ pipeline {
                 sshagent(credentials: ['ec2-ssh-key']) {
                     script {
                         sh """
+                        echo 'Stopping existing app if running...'
                         ssh -o StrictHostKeyChecking=no ${DEPLOY_USER}@${DEPLOY_HOST} "
                             mkdir -p ${DEPLOY_DIR} &&
-                            pkill -f ${APP_NAME} || true
+                            fuser -k ${PORT}/tcp || true
                         "
+                        
+                        echo 'Backing up old JAR...'
+                        ssh -o StrictHostKeyChecking=no ${DEPLOY_USER}@${DEPLOY_HOST} "
+                            if [ -f ${DEPLOY_DIR}/${APP_NAME} ]; then
+                                mv ${DEPLOY_DIR}/${APP_NAME} ${DEPLOY_DIR}/old-$(date +%s).jar
+                            fi
+                        "
+
+                        echo 'Copying new JAR to EC2...'
                         scp -o StrictHostKeyChecking=no target/${APP_NAME} ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_DIR}/
+
+                        echo 'Starting new application...'
                         ssh -o StrictHostKeyChecking=no ${DEPLOY_USER}@${DEPLOY_HOST} "
                             nohup java -jar ${DEPLOY_DIR}/${APP_NAME} > ${DEPLOY_DIR}/app.log 2>&1 &
                         "
@@ -58,10 +51,10 @@ pipeline {
 
     post {
         success {
-            echo "✅ Deployment successful!"
+            echo '✅ Deployment succeeded!'
         }
         failure {
-            echo "❌ Deployment failed. Check logs in Jenkins workspace or EC2 at ${DEPLOY_DIR}/app.log"
+            echo '❌ Deployment failed. Check Jenkins workspace or EC2 logs at ${DEPLOY_DIR}/app.log'
         }
     }
 }
