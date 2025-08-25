@@ -12,7 +12,7 @@
 ~h
 # Command Line History (newest to oldest):
 :wq
-|2,0,1756122010,,"wq"
+|2,0,1756122090,,"wq"
 :Wq
 |2,0,1756100229,,"Wq"
 
@@ -28,31 +28,41 @@
 
 # File marks:
 '0  61  0  ~/Jenkinsfile
-|4,48,61,0,1756122010,"~/Jenkinsfile"
-'1  128  0  ~/Jenkinsfile
-|4,49,128,0,1756121786,"~/Jenkinsfile"
-'2  68  0  ~/Jenkinsfile
-|4,50,68,0,1756121786,"~/Jenkinsfile"
-'3  70  0  ~/pom.xml
-|4,51,70,0,1756116014,"~/pom.xml"
-'4  182  0  ~/Jenkinsfile
-|4,52,182,0,1756102308,"~/Jenkinsfile"
-'5  115  0  ~/Jenkinsfile
-|4,53,115,0,1756102308,"~/Jenkinsfile"
-'6  122  0  ~/Jenkinsfile
-|4,54,122,0,1756102308,"~/Jenkinsfile"
-'7  55  0  ~/Jenkinsfile
-|4,55,55,0,1756102308,"~/Jenkinsfile"
-'8  1  0  ~/Jenkinsfile
-|4,56,1,0,1756102280,"~/Jenkinsfile"
-'9  1  0  ~/Jenkinsfile
-|4,57,1,0,1756102280,"~/Jenkinsfile"
+|4,48,61,0,1756122090,"~/Jenkinsfile"
+'1  121  0  ~/Jenkinsfile
+|4,49,121,0,1756122010,"~/Jenkinsfile"
+'2  61  0  ~/Jenkinsfile
+|4,50,61,0,1756122010,"~/Jenkinsfile"
+'3  188  0  ~/Jenkinsfile
+|4,51,188,0,1756121786,"~/Jenkinsfile"
+'4  128  0  ~/Jenkinsfile
+|4,52,128,0,1756121786,"~/Jenkinsfile"
+'5  128  0  ~/Jenkinsfile
+|4,53,128,0,1756121786,"~/Jenkinsfile"
+'6  68  0  ~/Jenkinsfile
+|4,54,68,0,1756121786,"~/Jenkinsfile"
+'7  70  0  ~/pom.xml
+|4,55,70,0,1756116014,"~/pom.xml"
+'8  242  0  ~/Jenkinsfile
+|4,56,242,0,1756102308,"~/Jenkinsfile"
+'9  175  0  ~/Jenkinsfile
+|4,57,175,0,1756102308,"~/Jenkinsfile"
 
 # Jumplist (newest first):
+-'  61  0  ~/Jenkinsfile
+|4,39,61,0,1756122090,"~/Jenkinsfile"
+-'  1  0  ~/Jenkinsfile
+|4,39,1,0,1756122079,"~/Jenkinsfile"
+-'  121  0  ~/Jenkinsfile
+|4,39,121,0,1756122010,"~/Jenkinsfile"
 -'  61  0  ~/Jenkinsfile
 |4,39,61,0,1756122010,"~/Jenkinsfile"
 -'  1  0  ~/Jenkinsfile
 |4,39,1,0,1756121999,"~/Jenkinsfile"
+-'  188  0  ~/Jenkinsfile
+|4,39,188,0,1756121786,"~/Jenkinsfile"
+-'  128  0  ~/Jenkinsfile
+|4,39,128,0,1756121786,"~/Jenkinsfile"
 -'  128  0  ~/Jenkinsfile
 |4,39,128,0,1756121786,"~/Jenkinsfile"
 -'  68  0  ~/Jenkinsfile
@@ -67,6 +77,14 @@
 |4,39,70,0,1756116014,"~/pom.xml"
 -'  70  0  ~/pom.xml
 |4,39,70,0,1756116014,"~/pom.xml"
+-'  70  0  ~/pom.xml
+|4,39,70,0,1756116014,"~/pom.xml"
+-'  70  0  ~/pom.xml
+|4,39,70,0,1756116014,"~/pom.xml"
+-'  70  0  ~/pom.xml
+|4,39,70,0,1756116014,"~/pom.xml"
+-'  70  0  ~/pom.xml
+|4,39,70,0,1756116014,"~/pom.xml"
 -'  1  0  ~/pom.xml
 |4,39,1,0,1756116008,"~/pom.xml"
 -'  1  0  ~/pom.xml
@@ -75,6 +93,22 @@
 |4,39,1,0,1756116008,"~/pom.xml"
 -'  1  0  ~/pom.xml
 |4,39,1,0,1756116008,"~/pom.xml"
+-'  1  0  ~/pom.xml
+|4,39,1,0,1756116008,"~/pom.xml"
+-'  1  0  ~/pom.xml
+|4,39,1,0,1756116008,"~/pom.xml"
+-'  1  0  ~/pom.xml
+|4,39,1,0,1756116008,"~/pom.xml"
+-'  1  0  ~/pom.xml
+|4,39,1,0,1756116008,"~/pom.xml"
+-'  242  0  ~/Jenkinsfile
+|4,39,242,0,1756102308,"~/Jenkinsfile"
+-'  175  0  ~/Jenkinsfile
+|4,39,175,0,1756102308,"~/Jenkinsfile"
+-'  182  0  ~/Jenkinsfile
+|4,39,182,0,1756102308,"~/Jenkinsfile"
+-'  115  0  ~/Jenkinsfile
+|4,39,115,0,1756102308,"~/Jenkinsfile"
 -'  182  0  ~/Jenkinsfile
 |4,39,182,0,1756102308,"~/Jenkinsfile"
 -'  115  0  ~/Jenkinsfile
@@ -157,108 +191,75 @@
 |4,39,11,35,1756100658,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
 -'  11  35  ~/springboot-ec2-jenkins-demo/Jenkinsfile
 |4,39,11,35,1756100658,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
--'  1  0  ~/springboot-ec2-jenkins-demo/Jenkinsfile
-|4,39,1,0,1756100586,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
--'  1  0  ~/springboot-ec2-jenkins-demo/Jenkinsfile
-|4,39,1,0,1756100586,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
--'  1  0  ~/springboot-ec2-jenkins-demo/Jenkinsfile
-|4,39,1,0,1756100586,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
--'  1  0  ~/springboot-ec2-jenkins-demo/Jenkinsfile
-|4,39,1,0,1756100586,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
--'  1  0  ~/springboot-ec2-jenkins-demo/Jenkinsfile
-|4,39,1,0,1756100586,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
--'  1  0  ~/springboot-ec2-jenkins-demo/Jenkinsfile
-|4,39,1,0,1756100586,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
--'  1  0  ~/springboot-ec2-jenkins-demo/Jenkinsfile
-|4,39,1,0,1756100586,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
--'  1  0  ~/springboot-ec2-jenkins-demo/Jenkinsfile
-|4,39,1,0,1756100586,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
--'  1  0  ~/springboot-ec2-jenkins-demo/Jenkinsfile
-|4,39,1,0,1756100586,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
--'  1  0  ~/springboot-ec2-jenkins-demo/Jenkinsfile
-|4,39,1,0,1756100586,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
--'  1  0  ~/springboot-ec2-jenkins-demo/Jenkinsfile
-|4,39,1,0,1756100586,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
--'  1  0  ~/springboot-ec2-jenkins-demo/Jenkinsfile
-|4,39,1,0,1756100586,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
--'  1  0  ~/springboot-ec2-jenkins-demo/Jenkinsfile
-|4,39,1,0,1756100586,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
--'  1  0  ~/springboot-ec2-jenkins-demo/Jenkinsfile
-|4,39,1,0,1756100586,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
--'  1  0  ~/springboot-ec2-jenkins-demo/Jenkinsfile
-|4,39,1,0,1756100586,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
--'  1  0  ~/springboot-ec2-jenkins-demo/Jenkinsfile
-|4,39,1,0,1756100586,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
--'  1  0  ~/springboot-ec2-jenkins-demo/Jenkinsfile
-|4,39,1,0,1756100586,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
--'  1  0  ~/springboot-ec2-jenkins-demo/Jenkinsfile
-|4,39,1,0,1756100586,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
--'  1  0  ~/springboot-ec2-jenkins-demo/Jenkinsfile
-|4,39,1,0,1756100586,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
--'  1  0  ~/springboot-ec2-jenkins-demo/Jenkinsfile
-|4,39,1,0,1756100586,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
--'  1  0  ~/springboot-ec2-jenkins-demo/Jenkinsfile
-|4,39,1,0,1756100586,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
--'  1  0  ~/springboot-ec2-jenkins-demo/Jenkinsfile
-|4,39,1,0,1756100586,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
--'  1  0  ~/springboot-ec2-jenkins-demo/Jenkinsfile
-|4,39,1,0,1756100586,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
--'  1  0  ~/springboot-ec2-jenkins-demo/Jenkinsfile
-|4,39,1,0,1756100586,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
--'  1  0  ~/springboot-ec2-jenkins-demo/Jenkinsfile
-|4,39,1,0,1756100586,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
--'  1  0  ~/springboot-ec2-jenkins-demo/Jenkinsfile
-|4,39,1,0,1756100586,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
--'  1  0  ~/springboot-ec2-jenkins-demo/Jenkinsfile
-|4,39,1,0,1756100586,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
--'  1  0  ~/springboot-ec2-jenkins-demo/Jenkinsfile
-|4,39,1,0,1756100586,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
--'  1  0  ~/springboot-ec2-jenkins-demo/Jenkinsfile
-|4,39,1,0,1756100586,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
--'  1  0  ~/springboot-ec2-jenkins-demo/Jenkinsfile
-|4,39,1,0,1756100586,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
--'  1  0  ~/springboot-ec2-jenkins-demo/Jenkinsfile
-|4,39,1,0,1756100586,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
--'  1  0  ~/springboot-ec2-jenkins-demo/Jenkinsfile
-|4,39,1,0,1756100586,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
--'  1  0  ~/springboot-ec2-jenkins-demo/Jenkinsfile
-|4,39,1,0,1756100232,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
--'  1  0  ~/springboot-ec2-jenkins-demo/Jenkinsfile
-|4,39,1,0,1756100232,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
--'  1  0  ~/springboot-ec2-jenkins-demo/Jenkinsfile
-|4,39,1,0,1756100232,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
--'  1  0  ~/springboot-ec2-jenkins-demo/Jenkinsfile
-|4,39,1,0,1756100232,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
--'  1  0  ~/springboot-ec2-jenkins-demo/Jenkinsfile
-|4,39,1,0,1756100232,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
--'  1  0  ~/springboot-ec2-jenkins-demo/Jenkinsfile
-|4,39,1,0,1756100232,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
--'  1  0  ~/springboot-ec2-jenkins-demo/Jenkinsfile
-|4,39,1,0,1756100232,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
--'  1  0  ~/springboot-ec2-jenkins-demo/Jenkinsfile
-|4,39,1,0,1756100232,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
--'  1  0  ~/springboot-ec2-jenkins-demo/Jenkinsfile
-|4,39,1,0,1756100232,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
--'  1  0  ~/springboot-ec2-jenkins-demo/Jenkinsfile
-|4,39,1,0,1756100232,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
--'  1  0  ~/springboot-ec2-jenkins-demo/Jenkinsfile
-|4,39,1,0,1756100232,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
--'  1  0  ~/springboot-ec2-jenkins-demo/Jenkinsfile
-|4,39,1,0,1756100232,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
--'  1  0  ~/springboot-ec2-jenkins-demo/Jenkinsfile
-|4,39,1,0,1756100232,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
--'  1  0  ~/springboot-ec2-jenkins-demo/Jenkinsfile
-|4,39,1,0,1756100232,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
+-'  11  35  ~/springboot-ec2-jenkins-demo/Jenkinsfile
+|4,39,11,35,1756100658,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
+-'  11  35  ~/springboot-ec2-jenkins-demo/Jenkinsfile
+|4,39,11,35,1756100658,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
+-'  11  35  ~/springboot-ec2-jenkins-demo/Jenkinsfile
+|4,39,11,35,1756100658,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
+-'  11  35  ~/springboot-ec2-jenkins-demo/Jenkinsfile
+|4,39,11,35,1756100658,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
+-'  11  35  ~/springboot-ec2-jenkins-demo/Jenkinsfile
+|4,39,11,35,1756100658,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
+-'  11  35  ~/springboot-ec2-jenkins-demo/Jenkinsfile
+|4,39,11,35,1756100658,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
+-'  11  35  ~/springboot-ec2-jenkins-demo/Jenkinsfile
+|4,39,11,35,1756100658,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
+-'  11  35  ~/springboot-ec2-jenkins-demo/Jenkinsfile
+|4,39,11,35,1756100658,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
+-'  11  35  ~/springboot-ec2-jenkins-demo/Jenkinsfile
+|4,39,11,35,1756100658,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
+-'  11  35  ~/springboot-ec2-jenkins-demo/Jenkinsfile
+|4,39,11,35,1756100658,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
+-'  11  35  ~/springboot-ec2-jenkins-demo/Jenkinsfile
+|4,39,11,35,1756100658,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
+-'  11  35  ~/springboot-ec2-jenkins-demo/Jenkinsfile
+|4,39,11,35,1756100658,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
+-'  11  35  ~/springboot-ec2-jenkins-demo/Jenkinsfile
+|4,39,11,35,1756100658,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
+-'  11  35  ~/springboot-ec2-jenkins-demo/Jenkinsfile
+|4,39,11,35,1756100658,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
+-'  11  35  ~/springboot-ec2-jenkins-demo/Jenkinsfile
+|4,39,11,35,1756100658,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
+-'  11  35  ~/springboot-ec2-jenkins-demo/Jenkinsfile
+|4,39,11,35,1756100658,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
+-'  11  35  ~/springboot-ec2-jenkins-demo/Jenkinsfile
+|4,39,11,35,1756100658,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
+-'  11  35  ~/springboot-ec2-jenkins-demo/Jenkinsfile
+|4,39,11,35,1756100658,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
+-'  11  35  ~/springboot-ec2-jenkins-demo/Jenkinsfile
+|4,39,11,35,1756100658,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
+-'  11  35  ~/springboot-ec2-jenkins-demo/Jenkinsfile
+|4,39,11,35,1756100658,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
+-'  11  35  ~/springboot-ec2-jenkins-demo/Jenkinsfile
+|4,39,11,35,1756100658,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
+-'  11  35  ~/springboot-ec2-jenkins-demo/Jenkinsfile
+|4,39,11,35,1756100658,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
+-'  11  35  ~/springboot-ec2-jenkins-demo/Jenkinsfile
+|4,39,11,35,1756100658,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
+-'  11  35  ~/springboot-ec2-jenkins-demo/Jenkinsfile
+|4,39,11,35,1756100658,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
+-'  11  35  ~/springboot-ec2-jenkins-demo/Jenkinsfile
+|4,39,11,35,1756100658,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
+-'  11  35  ~/springboot-ec2-jenkins-demo/Jenkinsfile
+|4,39,11,35,1756100658,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
+-'  11  35  ~/springboot-ec2-jenkins-demo/Jenkinsfile
+|4,39,11,35,1756100658,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
+-'  11  35  ~/springboot-ec2-jenkins-demo/Jenkinsfile
+|4,39,11,35,1756100658,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
+-'  11  35  ~/springboot-ec2-jenkins-demo/Jenkinsfile
+|4,39,11,35,1756100658,"~/springboot-ec2-jenkins-demo/Jenkinsfile"
 
 # History of marks within files (newest to oldest):
 
 > ~/Jenkinsfile
-	*	1756122009	0
+	*	1756122089	0
 	"	61	0
 	^	61	0
 	.	60	1
-	+	181	1
-	+	127	1
+	+	241	1
+	+	187	1
+	+	120	1
 	+	60	1
 
 > ~/pom.xml

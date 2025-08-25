@@ -23,25 +23,25 @@ pipeline {
                     script {
                         sh """
                         echo 'Stopping existing app if running...'
-                        ssh -o StrictHostKeyChecking=no ${DEPLOY_USER}@${DEPLOY_HOST} "
+                        ssh -o StrictHostKeyChecking=no ${DEPLOY_USER}@${DEPLOY_HOST} '
                             mkdir -p ${DEPLOY_DIR} &&
                             fuser -k ${PORT}/tcp || true
-                        "
-                        
+                        '
+
                         echo 'Backing up old JAR...'
-                        ssh -o StrictHostKeyChecking=no ${DEPLOY_USER}@${DEPLOY_HOST} "
+                        ssh -o StrictHostKeyChecking=no ${DEPLOY_USER}@${DEPLOY_HOST} '''
                             if [ -f ${DEPLOY_DIR}/${APP_NAME} ]; then
                                 mv ${DEPLOY_DIR}/${APP_NAME} ${DEPLOY_DIR}/old-$(date +%s).jar
                             fi
-                        "
+                        '''
 
                         echo 'Copying new JAR to EC2...'
                         scp -o StrictHostKeyChecking=no target/${APP_NAME} ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_DIR}/
 
                         echo 'Starting new application...'
-                        ssh -o StrictHostKeyChecking=no ${DEPLOY_USER}@${DEPLOY_HOST} "
+                        ssh -o StrictHostKeyChecking=no ${DEPLOY_USER}@${DEPLOY_HOST} '''
                             nohup java -jar ${DEPLOY_DIR}/${APP_NAME} > ${DEPLOY_DIR}/app.log 2>&1 &
-                        "
+                        '''
                         """
                     }
                 }
