@@ -8,7 +8,7 @@ pipeline {
 
     environment {
         DEPLOY_USER = 'ubuntu'
-        DEPLOY_HOST = '184.73.37.196'        // <- change
+        DEPLOY_HOST = '184.73.37.196'        // <- replace with your EC2 public IP/DNS
         DEPLOY_DIR  = '/home/ubuntu/app'
         APP_NAME    = 'springboot-ec2-jenkins-demo-1.0.0.jar'
     }
@@ -29,7 +29,6 @@ pipeline {
 
         stage('Deploy to EC2') {
             steps {
-                // Use SSH credentials stored in Jenkins (ID: ec2-ssh-key)
                 sshagent(credentials: ['ec2-ssh-key']) {
                     sh """
                       ssh -o StrictHostKeyChecking=no ${DEPLOY_USER}@${DEPLOY_HOST} "mkdir -p ${DEPLOY_DIR}"
@@ -46,10 +45,10 @@ pipeline {
 
     post {
         success {
-            echo "✅ Deployment successful! Visit: http://${DEPLOY_HOST}:8080/api/users"
+            echo "✅ Deployment successful to ${DEPLOY_HOST}:${DEPLOY_DIR}"
         }
         failure {
-            echo "❌ Deployment failed. Check Console Output and ${DEPLOY_DIR}/app.log on EC2."
+            echo "❌ Deployment failed. Check logs in Jenkins workspace or EC2 at ${DEPLOY_DIR}/app.log"
         }
     }
 }
